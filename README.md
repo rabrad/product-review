@@ -14,4 +14,4 @@ Build a simple Rating & Review form and display component.
 - [x] The app built using React
 - [x] The project uses unit tests and CSS Preprocessor (Sass)
 
-Netlify link:
+Netlify link: https://product-star-review.netlify.app/
