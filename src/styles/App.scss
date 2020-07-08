@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// html,
+body {
+  background-color: #e2e2e2;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+  font-size: 16px;
+  height: 100%;
+  position: relative;
+}
+
+.App {
+  margin: 0 auto;
+  padding-top: 3rem;
+  width: 90%;
+  max-width: 800px;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  // padding-bottom: -4rem;
+
+  footer {
+    position: absolute;
+    text-align: center;
+    font-size: 0.8em;
+    bottom: 1rem;
+    width: 100%;
+  }
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ffffff;
+  padding: 1.3rem 1.3rem 3rem 1.3rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 10px 6px -6px #818181;
+  .product-info {
+    img {
+      width: 100%;
+      max-width: 300px;
+      overflow: hidden;
+    }
+    h3 {
+      margin: 2rem 0 0.5rem 0;
+    }
+  }
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  input {
+    vertical-align: middle;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ffb400;
+    border-radius: 0.3rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #ffb400;
+    border: 1px solid #ffb400;
+    border-radius: 0.3rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.product-rating {
+  h4 {
+    margin-top: 2rem;
+  }
+
+  h5 {
+    margin-top: 1rem;
+  }
+
+  hr {
+    stroke: green($color: #cecece);
+    max-width: 30%;
+  }
+
+  .stars {
+    margin-top: 0.5rem;
+  }
+
+  .user-review {
+    margin: 1rem 0 2rem 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .product-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 1.3rem;
+
+    .product-info {
+      img {
+        max-width: 230px;
+        overflow: hidden;
+      }
+
+      h3 {
+        margin: 2rem 0 0.5rem 0;
+      }
+      p {
+        font-size: 0.8em;
+        width: 300px;
+      }
+    }
+  }
+
+  .review-form {
+    flex-flow: row wrap;
+    align-items: center;
+
+    button {
+      margin-left: 1rem;
+    }
+  }
+
+  .product-rating {
+    h4 {
+      margin-top: 0;
+    }
+
+    span {
+      font-size: 0.8em;
+      line-height: 1em;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e2e2e2;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+  font-size: 16px;
+  height: 100%;
+  position: relative;
+}
+
+.App {
+  margin: 0 auto;
+  padding-top: 3rem;
+  width: 90%;
+  max-width: 800px;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.App footer {
+  position: absolute;
+  text-align: center;
+  font-size: 0.8em;
+  bottom: 1rem;
+  width: 100%;
+}
+
+.product-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  background-color: #ffffff;
+  padding: 1.3rem 1.3rem 3rem 1.3rem;
+  border-radius: 0.7rem;
+  -webkit-box-shadow: 0 10px 6px -6px #818181;
+          box-shadow: 0 10px 6px -6px #818181;
+}
+
+.product-container .product-info img {
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.product-container .product-info h3 {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.review-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.review-form input {
+  vertical-align: middle;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ffb400;
+  border-radius: 0.3rem;
+}
+
+.review-form button {
+  padding: 10px 20px;
+  background-color: #ffb400;
+  border: 1px solid #ffb400;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+}
+
+.product-rating h4 {
+  margin-top: 2rem;
+}
+
+.product-rating h5 {
+  margin-top: 1rem;
+}
+
+.product-rating hr {
+  stroke: 206;
+  max-width: 30%;
+}
+
+.product-rating .stars {
+  margin-top: 0.5rem;
+}
+
+.product-rating .user-review {
+  margin: 1rem 0 2rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .product-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 1.3rem;
+  }
+  .product-container .product-info img {
+    max-width: 230px;
+    overflow: hidden;
+  }
+  .product-container .product-info h3 {
+    margin: 2rem 0 0.5rem 0;
+  }
+  .product-container .product-info p {
+    font-size: 0.8em;
+    width: 300px;
+  }
+  .review-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .review-form button {
+    margin-left: 1rem;
+  }
+  .product-rating h4 {
+    margin-top: 0;
+  }
+  .product-rating span {
+    font-size: 0.8em;
+    line-height: 1em;
+  }
+}
+/*# sourceMappingURL=App.css.map */
